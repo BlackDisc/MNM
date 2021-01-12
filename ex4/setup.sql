@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS ex4;
+USE ex4;
+CREATE TABLE IF NOT EXISTS Numbers(
+   id INT NOT NULL AUTO_INCREMENT,
+   number1 INT,
+   number2 INT,
+   result INT,
+   PRIMARY KEY (id)
+);

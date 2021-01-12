@@ -1,0 +1,13 @@
+database:
+    image: mysql:5.7
+    ports:
+        - "33061:3306"
+    command: --init-file /data/application/init.sql
+    volumes:
+        - ./setup.sql:/data/application/init.sql
+    environment:
+        MYSQL_ROOT_USER: root
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: ex4
+        MYSQL_USER: user
+        MYSQL_PASSWORD: userpass
